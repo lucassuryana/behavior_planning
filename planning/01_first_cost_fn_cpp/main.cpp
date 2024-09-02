@@ -7,6 +7,11 @@ using std::endl;
 int main() {
   int goal_lane = 0;
     
+  // How to run?
+  // cd behavior_planning/planning/01_first_cost_fn_cpp/
+  // g++ cost.cpp main.cpp
+  // ./a.out
+
   // Test cases used for grading - do not change.
   double cost;
   cout << "Costs for (intended_lane, final_lane, goal_distance):" << endl;
