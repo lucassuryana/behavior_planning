@@ -6,6 +6,11 @@ using std::cout;
 using std::endl;
 
 int main() {
+  // How to run?
+  // cd behavior_planning/planning/02_second_cost_fn_cpp/
+  // g++ cost.cpp main.cpp
+  // ./a.out
+
   // Target speed of our vehicle
   int target_speed = 10;
 
