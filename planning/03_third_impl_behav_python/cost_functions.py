@@ -14,7 +14,7 @@ for details on how useful helper data is computed.
 """
 
 #weights for costs
-REACH_GOAL = 1000000
+REACH_GOAL = 10
 EFFICIENCY = 100000
 
 DEBUG = False

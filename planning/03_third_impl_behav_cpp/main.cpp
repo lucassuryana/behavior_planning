@@ -6,6 +6,9 @@
 using std::cout;
 using std::endl;
 
+// How to run?
+// g++ cost.cpp main.cpp road.cpp vehicle.cpp 
+
 // impacts default behavior for most states
 int SPEED_LIMIT = 10;
 
