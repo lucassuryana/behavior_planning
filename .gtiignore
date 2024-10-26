@@ -1,0 +1,2 @@
+# Ignore build folders
+trajectory_generation/quintic_polynomial_solver/eigen-3.4.0/
