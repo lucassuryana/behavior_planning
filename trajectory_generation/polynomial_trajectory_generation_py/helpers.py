@@ -98,6 +98,10 @@ def show_trajectory(s_coeffs, d_coeffs, T, vehicle=None):
     plt.scatter(X,Y,color="blue")
     if vehicle:
         plt.scatter(X2, Y2,color="red")
+
+        # Draw connecting lines between X, Y and X2, Y2
+        for x1, y1, x2, y2 in zip(X, Y, X2, Y2):
+            plt.plot([x1, x2], [y1, y2], color="black", linestyle='-', linewidth=0.5)        
     plt.show()
 
 def get_f_and_N_derivatives(coeffs, N=3):

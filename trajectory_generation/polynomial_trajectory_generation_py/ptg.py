@@ -3,18 +3,25 @@ import random
 from cost_functions import *
 from constants import *
 
+random.seed(42)
+np.random.seed(42)
+
 # TODO - tweak weights to existing cost functions
+time = 3
+distance = 4
+comfort = 1
+safety = 2
 WEIGHTED_COST_FUNCTIONS = [
-    (time_diff_cost,    1),
-    (s_diff_cost,       1),
-    (d_diff_cost,       1),
-    (efficiency_cost,   1),
-    (max_jerk_cost,     1),
-    (total_jerk_cost,   1),
-    (collision_cost,    1),
-    (buffer_cost,       1),
-    (max_accel_cost,    1),
-    (total_accel_cost,  1),
+    (time_diff_cost,    time * 4),
+    (efficiency_cost,   time * 4),    
+    (total_accel_cost,  time * 4),
+    (s_diff_cost,       distance * 4),
+    (d_diff_cost,       distance * 4),
+    (max_jerk_cost,     comfort * 4),
+    (total_jerk_cost,   comfort * 4),
+    (max_accel_cost,    comfort * 4),
+    (collision_cost,    safety * 4),
+    (buffer_cost,       safety * 4)
 ]
 
 def PTG(start_s, start_d, target_vehicle, delta, T, predictions):
